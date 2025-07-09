@@ -31,6 +31,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const tooltip = document.getElementById('custom-tooltip');
             const container = document.querySelector('#main-section .container');
+            let currentHotspotId = null;
 
             const contents = {
                 dot1: `<h6 class="mb-1">Playground Area A</h6><p class="mb-2">Fun activities and games for children ages 5–10.</p><button class='btn btn-sm btn-light text-primary'>Learn More</button>`,
@@ -41,15 +42,27 @@
                 dot6: `<h6 class="mb-1">Ball Pit</h6><p class="mb-0">Jump and play in colorful balls!</p>`,
             };
 
+            const modalDetails = {
+                dot1: {
+                    title: "Playground Area A",
+                    content: `<p>This is a large playground for kids ages 5–10. It includes swings, slides, and climbing structures.</p><img src="./img/playground.jpg" class="img-fluid rounded" alt="Playground">`
+                },
+                dot2: {
+                    title: "Snack Corner",
+                    content: `<p>Enjoy snacks and drinks like popcorn, ice cream, and lemonade!</p><img src="./img/snacks.jpg" class="img-fluid rounded" alt="Snacks">`
+                },
+            };
+
             let hideTimeout = null;
 
             document.querySelectorAll('.hotspot').forEach(dot => {
                 dot.addEventListener('mouseenter', () => {
                     const id = dot.id;
+                    currentHotspotId = id;
+
                     tooltip.innerHTML = contents[id] || `<p>Coming soon</p>`;
                     tooltip.classList.remove('d-none');
 
-                    // Show it temporarily to measure size
                     tooltip.style.display = 'block';
                     tooltip.style.visibility = 'hidden';
 
@@ -73,7 +86,7 @@
                     hideTimeout = setTimeout(() => {
                         tooltip.classList.add('d-none');
                         tooltip.style.display = 'none';
-                    }, 200); // Delay to allow mouse to reach tooltip
+                    }, 200);
                 });
             });
 
@@ -85,9 +98,39 @@
                 tooltip.classList.add('d-none');
                 tooltip.style.display = 'none';
             });
+
+            tooltip.addEventListener('click', function (e) {
+                const btn = e.target.closest('button');
+                if (btn && currentHotspotId && modalDetails[currentHotspotId]) {
+                    const modalData = modalDetails[currentHotspotId];
+
+                    tooltip.classList.add('d-none');
+                    tooltip.style.display = 'none';
+
+                    document.getElementById('detailModalLabel').textContent = modalData.title;
+                    document.getElementById('detailModalBody').innerHTML = modalData.content;
+
+                    const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+                    modal.show();
+                }
+            });
         });
     </script>
 
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="detailModalLabel">Title</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="detailModalBody">
+                    Loading...
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

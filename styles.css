@@ -52,3 +52,17 @@ body {
 .custom-tooltip button {
     margin-top: 8px;
 }
+
+/* Modal */
+.modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body img {
+    margin-top: 10px;
+}
