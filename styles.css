@@ -11,7 +11,7 @@
 
 .brand-name {
     color: #E30614 !important;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -28,7 +28,7 @@
 }
 
 .networking {
-    padding: 116px 0;
+    padding: 100px 0;
 }
 
 .heading {
@@ -94,20 +94,22 @@
     content: none;
 }
 
-.btn-custom-white {
-    background-color: white;
-    color: black;
-    font-weight: 600;
-    border-radius: 12px;
-    padding: 12px 24px;
-}
-
-.btn-custom-black {
-    background-color: #222;
+.btn-custom-red {
+    background-color: #E30614;
     color: white;
     font-weight: 600;
     border-radius: 12px;
     padding: 12px 24px;
+    text-decoration: none;
+}
+
+.btn-custom-blue {
+    background-color: #0172C0;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 12px 24px;
+    text-decoration: none;
 }
 
 .btn-custom-white:hover {
@@ -121,6 +123,18 @@
 @media only screen and (max-width: 768px) {
     .img {
         width: 338px;
+    }
+
+    .networking {
+        text-align: center;
+    }
+
+    .row.mobile-center {
+        justify-content: center;
+    }
+
+    .networking {
+        padding: 50px 0;
     }
 }
 
