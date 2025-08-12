@@ -1,12 +1,210 @@
-@import url('https://fonts.cdnfonts.com/css/geomanist');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-body {
-    font-family: 'Geomanist', sans-serif;
-    background-color: #006FC8 !important;
+.bg-light {
+    background-color: #ececec !important;
 }
+
+.brand-name {
+    color: #E30614 !important;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #385b63;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #E30614;
+}
+
+.social a:hover {
+    transform: translateY(-0.15rem);
+}
+
+.networking {
+    padding: 116px 0;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 44px;
+    color: #385b64;
+}
+
+.social a:hover .twitter {
+    color: #1da1f2;
+}
+
+.social a:hover .dribbble {
+    color: #be205f;
+}
+
+.social a:hover .facebook {
+    color: #1877f2;
+}
+
+.social a:hover .instagram {
+    /*   background: linear-gradient(to left, #393dd8, #ca2e86, #f68601);
+  -webkit-background-clip: text;
+  color: transparent; */
+    color: #ca2e86;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #E30614 !important;
+    border-color: #E30614 !important;
+}
+
+.nav-item a {
+    margin: 0 6px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #2d454f;
+    border-color: #2d454f;
+}
+
+.img {
+    width: 719px;
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000e6;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.social-icon::after {
+    content: none;
+}
+
+.btn-custom-white {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 12px 24px;
+}
+
+.btn-custom-black {
+    background-color: #222;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 12px 24px;
+}
+
+.btn-custom-white:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-custom-black:hover {
+    background-color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    .img {
+        width: 338px;
+    }
+}
+
+/* Start Site Footer */
+.site-footer-section {
+    padding: 20px 20px 0 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.site-footer-section p {
+    margin: 0 !important;
+}
+
+.site-footer-grid {
+    display: grid;
+    grid-template-columns: 150px 125px 175px 1fr 150px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#footer-1-img {
+    width: 150px;
+}
+
+#footer-2-img {
+    width: 125px;
+}
+
+#footer-3-img {
+    width: 175px;
+}
+
+.site-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.site-footer-content:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-icon-flex {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.footer-icon-flex img {
+    width: 24px;
+}
+
+.site-footer-content p {
+    text-align: start;
+    font-size: 14px;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .site-footer-section {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .site-footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer-content {
+        text-align: center;
+    }
+
+    .site-footer-content p {
+        text-align: center;
+    }
+}
+
+/* End Site Footer */
