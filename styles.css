@@ -625,6 +625,12 @@ ul.social li a {
 .logo-img-container {
   display: flex;
   justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 /* End Logo Sponsor */
 
