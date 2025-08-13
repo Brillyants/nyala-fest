@@ -291,6 +291,10 @@
     padding: 16px;
 }
 
+.toy-card .card-body p {
+    min-height: 100px;
+}
+
 .toy-card .author-info {
     display: flex;
     align-items: center;
