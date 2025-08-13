@@ -1,1187 +1,1089 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OCBC - Nyala Fest</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="icon"
-      href="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/favicon_401d3307f9.ico"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
 
-  <body>
-    <div id="curtain-left" class="curtain"></div>
-    <div id="curtain-right" class="curtain"></div>
-    <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i class="fa fa-bars-staggered"></i>
-        </button>
-        <a class="navbar-brand text-red" href="#"
-          ><img
-            src="https://www.ocbc.id/asset/media/Feature/Header/Logo/logo-ocbc.svg"
-            style="width: 150px"
-        /></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Classes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Travel Fair</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mini Bazaar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Children's Corner</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Music Performance</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 social">
-            <li class="nav-item">
-              <a class="nav-link instagram social-icon" href="#"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link social-icon" href="#"
-                ><i class="fab fa-facebook-f facebook"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link social-icon" href="#"
-                ><i class="fab fa-youtube youtube"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link social-icon" href="#"
-                ><i class="fab fa-tiktok tiktok"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link social-icon" href="#"
-                ><i class="fab fa-x x"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OCBC - Nyala Fest</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/favicon_401d3307f9.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="curtain-left" class="curtain"></div>
+  <div id="curtain-right" class="curtain"></div>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars-staggered"></i>
+      </button>
+      <a class="navbar-brand text-red" href="#"><img
+          src="https://www.ocbc.id/asset/media/Feature/Header/Logo/logo-ocbc.svg" style="width: 150px" /></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-lg-5">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Travel Fair</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mini Bazaar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Children's Corner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Music Performance</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 social">
+          <li class="nav-item">
+            <a class="nav-link instagram social-icon" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-icon" href="#"><i class="fab fa-facebook-f facebook"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-icon" href="#"><i class="fab fa-youtube youtube"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-icon" href="#"><i class="fab fa-tiktok tiktok"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-icon" href="#"><i class="fab fa-x x"></i></a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- main -->
-    <section id="hero-section">
-      <div class="container py-4 text-gray font-weight-400">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="networking">
-              <h1 class="heading">
-                Financial tetap <span class="text-red">FIT</span><br />
-                Lifestyle terus <span class="text-red">FUN</span><br />
-                be <span class="text-red">#FUNanciallyFIT</span><br />
-              </h1>
-              <div class="row mt-4 text-md-middle mobile-center">
-                <div class="col-auto">
-                  <a href="#" class="btn-custom-red">Free Access</a>
-                </div>
-                <div class="col-auto">
-                  <a href="#" class="btn-custom-blue">Buy Ticket</a>
-                </div>
+    </div>
+  </nav>
+  <!-- main -->
+  <section id="hero-section">
+    <div class="container py-4 text-gray font-weight-400">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="networking">
+            <h1 class="heading">
+              Financial tetap <span class="text-red">FIT</span><br />
+              Lifestyle terus <span class="text-red">FUN</span><br />
+              be <span class="text-red">#FUNanciallyFIT</span><br />
+            </h1>
+            <div class="row mt-4 text-md-middle mobile-center">
+              <div class="col-auto">
+                <a href="#" class="btn-custom-red">Free Access</a>
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn-custom-blue">Buy Ticket</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 hero-img-mobile">
-            <div class="img">
-              <img
-                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/hero_bg_mobile_94d0012e06.png"
-                alt="communication"
-                class="w-100"
-              />
-            </div>
+        </div>
+        <div class="col-sm-12 hero-img-mobile">
+          <div class="img">
+            <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/hero_bg_mobile_94d0012e06.png"
+              alt="communication" class="w-100" />
           </div>
         </div>
       </div>
-    </section>
-    <!-- agenda -->
-    <section id="agenda-section">
-      <div class="container py-4 text-white">
+    </div>
+  </section>
+  <!-- agenda -->
+  <section id="agenda-section">
+    <div class="container py-4 text-white">
+      <p class="text-center">
+        <span class="text-highlight-red">FUNanciallyFIT</span> event dari
+        Nyala OCBC selama 3 hari yang akan membuat kamu jadi lebih sehat
+        finansial dengan beragam kelas keuangan, bisnis hingga parenting
+        bersama insightful speakers. Nikmati juga experiences lainnya, dari
+        travel fair, mini bazaar hingga konser music yang akan buat lifestyle
+        kamu terus fun!
+      </p>
+      <div id="schedule">
+        <div class="row">
+          <div class="col-5 schedule-first-col">
+            <h2>12-14</h2>
+            <h3>Sept 2025</h3>
+          </div>
+          <div class="col-7 schedule-second-col">
+            <h2>Senayan City</h2>
+            <h3>Main Atrium, Cafes & Cinema XX1</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="./img/frame-2.png" style="margin-top: -2%; width: 100%" />
+
+  <!-- testing -->
+  <div class="racesWrapper">
+    <div class="races">
+      <h2>Monaco</h2>
+      <h2>Austria</h2>
+      <h2>Hungary</h2>
+      <h2>Netherlands</h2>
+      <h2>Japan</h2>
+    </div>
+  </div>
+
+  <!-- carousel -->
+  <section id="carousel-section">
+    <div class="container py-5">
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h2>Nikmati 5 Keseruan Nyala Fest</h2>
+        </div>
         <p class="text-center">
           <span class="text-highlight-red">FUNanciallyFIT</span> event dari
           Nyala OCBC selama 3 hari yang akan membuat kamu jadi lebih sehat
           finansial dengan beragam kelas keuangan, bisnis hingga parenting
           bersama insightful speakers. Nikmati juga experiences lainnya, dari
-          travel fair, mini bazaar hingga konser music yang akan buat lifestyle
-          kamu terus fun!
+          travel fair, mini bazaar hingga konser music yang akan buat
+          lifestyle kamu terus fun!
         </p>
-        <div id="schedule">
-          <div class="row">
-            <div class="col-5 schedule-first-col">
-              <h2>12-14</h2>
-              <h3>Sept 2025</h3>
-            </div>
-            <div class="col-7 schedule-second-col">
-              <h2>Senayan City</h2>
-              <h3>Main Atrium, Cafes & Cinema XX1</h3>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <img src="./img/frame-4 (6).png" style="margin-top: -2%; width: 100%" />
-    <!-- carousel -->
-    <section id="carousel-section">
-      <div class="container py-5">
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h2>Nikmati 5 Keseruan Nyala Fest</h2>
-          </div>
-          <p class="text-center">
-            <span class="text-highlight-red">FUNanciallyFIT</span> event dari
-            Nyala OCBC selama 3 hari yang akan membuat kamu jadi lebih sehat
-            finansial dengan beragam kelas keuangan, bisnis hingga parenting
-            bersama insightful speakers. Nikmati juga experiences lainnya, dari
-            travel fair, mini bazaar hingga konser music yang akan buat
-            lifestyle kamu terus fun!
-          </p>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-              <div class="card toy-card">
-                <img src="./img/carousel-1.jpg" alt="Toy 1" class="toy-img" />
-                <div class="card-body">
-                  <h5 class="card-title">Classes</h5>
-                  <p>
-                    Dapatkan insight keuangan, bisnis hingga parenting bersama
-                    pakarnya.
-                    <b
-                      >Ikuti juga kelas workshop & masterclass with limited
-                      ticket seats</b
-                    >
-                  </p>
-                  <div class="bottom-row">
-                    <div class="author-info">Free entry & ticketing</div>
-                    <a href="#" class="button-link">Beli tiket &rsaquo;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-              <div class="card toy-card">
-                <img src="./img/carousel-2.jpg" alt="Toy 2" class="toy-img" />
-                <div class="card-body">
-                  <h5 class="card-title">Travel Fair</h5>
-                  <p>
-                    Cashback hingga Rp9 Juta & harga special dari beragam
-                    airlines & tour agent dengan Kartu Kredit OCBC
-                  </p>
-                  <div class="bottom-row">
-                    <div class="author-info">Free entry</div>
-                    <a href="#" class="button-link">Cek Promo &rsaquo;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-              <div class="card toy-card">
-                <img src="./img/carousel-3.jpg" alt="Toy 3" class="toy-img" />
-                <div class="card-body">
-                  <h5 class="card-title">Concert</h5>
-                  <p>
-                    Seru-seruan & sing along bersama: Barasuara, Isyana
-                    Sarasvati & Maliq & d'essentials setiap hari Pk 20.00
-                  </p>
-                  <div class="bottom-row">
-                    <div class="author-info">Free entry</div>
-                    <a href="#" class="button-link">Info lengkap &rsaquo;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="swiper-slide">
-              <div class="card toy-card">
-                <img src="./img/carousel-4.png" alt="Toy 4" class="toy-img" />
-                <div class="card-body">
-                  <h5 class="card-title">Mini Bazaar</h5>
-                  <p>
-                    Kunjungi beragam tenants dari Nyala Bisnis OCBC & dapatkan
-                    cashback 20% transaksi pakai QRIS & Kartu Debit OCBC
-                  </p>
-                  <div class="bottom-row">
-                    <div class="author-info">Free entry</div>
-                    <a href="#" class="button-link">Lihat tenants &rsaquo;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="swiper-slide">
-              <div class="card toy-card">
-                <img src="./img/carousel-5.jpg" alt="Toy 5" class="toy-img" />
-                <div class="card-body">
-                  <h5 class="card-title">Kid's activity</h5>
-                  <p>
-                    Beragam aktivitas seru untuk anak & orang tua sambil belajar
-                    finansial bersama Young Nyala, tabungan anak dari OCBC
-                  </p>
-                  <div class="bottom-row">
-                    <div class="author-info">Free entry</div>
-                    <a href="#" class="button-link"
-                      >Buka tabungan anak &rsaquo;</a
-                    >
-                  </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="card toy-card">
+              <img src="./img/carousel-1.jpg" alt="Toy 1" class="toy-img" />
+              <div class="card-body">
+                <h5 class="card-title">Classes</h5>
+                <p>
+                  Dapatkan insight keuangan, bisnis hingga parenting bersama
+                  pakarnya.
+                  <b>Ikuti juga kelas workshop & masterclass with limited
+                    ticket seats</b>
+                </p>
+                <div class="bottom-row">
+                  <div class="author-info">Free entry & ticketing</div>
+                  <a href="#" class="button-link">Beli tiket &rsaquo;</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="card toy-card">
+              <img src="./img/carousel-2.jpg" alt="Toy 2" class="toy-img" />
+              <div class="card-body">
+                <h5 class="card-title">Travel Fair</h5>
+                <p>
+                  Cashback hingga Rp9 Juta & harga special dari beragam
+                  airlines & tour agent dengan Kartu Kredit OCBC
+                </p>
+                <div class="bottom-row">
+                  <div class="author-info">Free entry</div>
+                  <a href="#" class="button-link">Cek Promo &rsaquo;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="card toy-card">
+              <img src="./img/carousel-3.jpg" alt="Toy 3" class="toy-img" />
+              <div class="card-body">
+                <h5 class="card-title">Concert</h5>
+                <p>
+                  Seru-seruan & sing along bersama: Barasuara, Isyana
+                  Sarasvati & Maliq & d'essentials setiap hari Pk 20.00
+                </p>
+                <div class="bottom-row">
+                  <div class="author-info">Free entry</div>
+                  <a href="#" class="button-link">Info lengkap &rsaquo;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="card toy-card">
+              <img src="./img/carousel-4.png" alt="Toy 4" class="toy-img" />
+              <div class="card-body">
+                <h5 class="card-title">Mini Bazaar</h5>
+                <p>
+                  Kunjungi beragam tenants dari Nyala Bisnis OCBC & dapatkan
+                  cashback 20% transaksi pakai QRIS & Kartu Debit OCBC
+                </p>
+                <div class="bottom-row">
+                  <div class="author-info">Free entry</div>
+                  <a href="#" class="button-link">Lihat tenants &rsaquo;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="card toy-card">
+              <img src="./img/carousel-5.jpg" alt="Toy 5" class="toy-img" />
+              <div class="card-body">
+                <h5 class="card-title">Kid's activity</h5>
+                <p>
+                  Beragam aktivitas seru untuk anak & orang tua sambil belajar
+                  finansial bersama Young Nyala, tabungan anak dari OCBC
+                </p>
+                <div class="bottom-row">
+                  <div class="author-info">Free entry</div>
+                  <a href="#" class="button-link">Buka tabungan anak &rsaquo;</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section>
-    <img
-      src="./img/arch-divider (1).png"
-      style="margin-top: -2%; width: 100%"
-    />
-    <!-- main speaker -->
-    <section id="speaker-section">
-      <div class="container">
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h2>Speaker Seru Nyala Fest</h2>
-          </div>
-          <p class="text-center">
-            <span class="text-highlight-red">FUNanciallyFIT</span> event dari
-            Nyala OCBC selama 3 hari yang akan membuat kamu jadi lebih sehat
-            finansial dengan beragam kelas keuangan, bisnis hingga parenting
-            bersama insightful speakers. Nikmati juga experiences lainnya, dari
-            travel fair, mini bazaar hingga konser music yang akan buat
-            lifestyle kamu terus fun!
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4 my-auto">
-            <div class="box shadow-sm p-4 main-speaker-1">
-              <div class="image-wrapper mb-3">
-                <img
-                  class="img-fluid"
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt="..."
-                />
-              </div>
-              <div class="box-desc">
-                <h5>Denny Sumargo</h5>
-                <p>Master Class</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 my-auto">
-            <div class="box shadow-sm p-4 main-speaker-2">
-              <div class="image-wrapper mb-3">
-                <img
-                  class="img-fluid"
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt="..."
-                />
-              </div>
-              <div class="box-desc">
-                <h5>Lo Kheng Hong</h5>
-                <p>Master Class</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 my-auto">
-            <div class="box shadow-sm p-4 main-speaker-3">
-              <div class="image-wrapper mb-3">
-                <img
-                  class="img-fluid"
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt="..."
-                />
-              </div>
-              <div class="box-desc">
-                <h5>Yandi Lawrens</h5>
-                <p>Master Class</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- speaker additional -->
-    <section class="section-team">
-      <div class="container">
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h3>Workshop Class</h3>
-          </div>
-        </div>
-        <div
-          class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4"
-        >
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Irwan Tja</h3>
-                <span class="speciality">Workshop Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Workshop Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ligwina Hananto</h3>
-                <span class="speciality">Workshop Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Workshop Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ligwina Hananto</h3>
-                <span class="speciality">Workshop Class</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h3>Financial Class</h3>
-          </div>
-        </div>
-        <div
-          class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4"
-        >
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ust. Dennis Lim</h3>
-                <span class="speciality">Financial Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ligwina Hananto</h3>
-                <span class="speciality">Financial Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ust. Dennis Lim</h3>
-                <span class="speciality">Financial Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ligwina Hananto</h3>
-                <span class="speciality">Financial Class</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Ust. Dennis Lim</h3>
-                <span class="speciality">Financial Class</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h3>Travel Talks</h3>
-          </div>
-        </div>
-        <div
-          class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4"
-        >
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Travel Talks</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Travel Talks</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Travel Talks</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Travel Talks</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="single-person">
-              <div class="person-image">
-                <img
-                  src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                  alt=""
-                />
-              </div>
-              <div class="person-info">
-                <h3 class="full-name">Muh Sadam</h3>
-                <span class="speciality">Travel Talks</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <img src="./img/frame-4 (5).png" style="margin-top: -2%; width: 100%" />
-    <!-- table section -->
-    <section id="table-section">
+    </div>
+  </section>
+  <img src="./img/arch-divider.png" style="margin-top: -2%; width: 100%" />
+  <!-- main speaker -->
+  <section id="speaker-section">
+    <div class="container">
       <div class="general-heading mb-48 text-center text-white">
         <div class="heading">
-          <h2>Classes Schedule - Free Entry</h2>
+          <h2>Speaker Seru Nyala Fest</h2>
         </div>
         <p class="text-center">
-          Kunjungi Senayan City main atrium untuk mengikuti kelas finansial,
-          bisnis & parenting berikut ini:
+          <span class="text-highlight-red">FUNanciallyFIT</span> event dari
+          Nyala OCBC selama 3 hari yang akan membuat kamu jadi lebih sehat
+          finansial dengan beragam kelas keuangan, bisnis hingga parenting
+          bersama insightful speakers. Nikmati juga experiences lainnya, dari
+          travel fair, mini bazaar hingga konser music yang akan buat
+          lifestyle kamu terus fun!
         </p>
       </div>
-      <div class="container">
-        <div class="table-responsive">
-          <table class="table table-bordered text-center align-middle">
-            <thead class="table-dark">
-              <tr>
-                <th>No</th>
-                <th>Jenis Tiket</th>
-                <th>Jumlah Tiket</th>
-                <th>Penempatan Dana</th>
-                <th>Tenor<br />(Bulan)</th>
-                <th>Penalti</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="2">1</td>
-                <td style="background-color: #422802; color: white" rowspan="2">
-                  Bronze<br />
-                </td>
-                <td>1 Tiket</td>
-                <td>11.000.000</td>
-                <td>12</td>
-                <td>500.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>12.000.000</td>
-                <td>24</td>
-                <td>1.000.000</td>
-              </tr>
-              <tr>
-                <td rowspan="4">2</td>
-                <td style="background-color: #584d4d; color: white" rowspan="4">
-                  Silver
-                </td>
-                <td>1 Tiket</td>
-                <td>30.000.000</td>
-                <td>12</td>
-                <td>1.200.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>15.000.000</td>
-                <td>24</td>
-                <td>1.200.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>55.000.000</td>
-                <td>12</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>30.000.000</td>
-                <td>24</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td rowspan="6">3</td>
-                <td style="background-color: #a7008c; color: white" rowspan="6">
-                  Diamond
-                </td>
-                <td>1 Tiket</td>
-                <td>100.000.000</td>
-                <td>6</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>55.000.000</td>
-                <td>12</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>30.000.000</td>
-                <td>24</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>200.000.000</td>
-                <td>6</td>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>110.000.000</td>
-                <td>12</td>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>60.000.000</td>
-                <td>24</td>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <td rowspan="6">4</td>
-                <td style="background-color: #ffc507; color: white" rowspan="6">
-                  VVIP
-                </td>
-                <td>1 Tiket</td>
-                <td>160.000.000</td>
-                <td>6</td>
-                <td>4.000.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>90.000.000</td>
-                <td>12</td>
-                <td>4.000.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>50.000.000</td>
-                <td>24</td>
-                <td>4.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>320.000.000</td>
-                <td>6</td>
-                <td>8.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>175.000.000</td>
-                <td>12</td>
-                <td>8.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>100.000.000</td>
-                <td>24</td>
-                <td>8.000.000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <br />
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h2>Master class & workshop schedule - Ticketing Rp 199 Ribu</h2>
-          </div>
-          <p class="text-center">
-            Pilih 3 dari 12 kelas masterclass & workshop untuk dapatkan beragam
-            insight dari speakers favoritmu
-          </p>
-        </div>
-        <div class="table-responsive">
-          <table class="table table-bordered text-center align-middle">
-            <thead class="table-dark">
-              <tr>
-                <th>No</th>
-                <th>Jenis Tiket</th>
-                <th>Jumlah Tiket</th>
-                <th>Penempatan Dana</th>
-                <th>Tenor<br />(Bulan)</th>
-                <th>Penalti</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="2">1</td>
-                <td style="background-color: #422802; color: white" rowspan="2">
-                  Bronze<br />
-                </td>
-                <td>1 Tiket</td>
-                <td>11.000.000</td>
-                <td>12</td>
-                <td>500.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>12.000.000</td>
-                <td>24</td>
-                <td>1.000.000</td>
-              </tr>
-              <tr>
-                <td rowspan="4">2</td>
-                <td style="background-color: #584d4d; color: white" rowspan="4">
-                  Silver
-                </td>
-                <td>1 Tiket</td>
-                <td>30.000.000</td>
-                <td>12</td>
-                <td>1.200.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>15.000.000</td>
-                <td>24</td>
-                <td>1.200.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>55.000.000</td>
-                <td>12</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>30.000.000</td>
-                <td>24</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td rowspan="6">3</td>
-                <td style="background-color: #a7008c; color: white" rowspan="6">
-                  Diamond
-                </td>
-                <td>1 Tiket</td>
-                <td>100.000.000</td>
-                <td>6</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>55.000.000</td>
-                <td>12</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>30.000.000</td>
-                <td>24</td>
-                <td>2.500.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>200.000.000</td>
-                <td>6</td>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>110.000.000</td>
-                <td>12</td>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>60.000.000</td>
-                <td>24</td>
-                <td>5.000.000</td>
-              </tr>
-              <tr>
-                <td rowspan="6">4</td>
-                <td style="background-color: #ffc507; color: white" rowspan="6">
-                  VVIP
-                </td>
-                <td>1 Tiket</td>
-                <td>160.000.000</td>
-                <td>6</td>
-                <td>4.000.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>90.000.000</td>
-                <td>12</td>
-                <td>4.000.000</td>
-              </tr>
-              <tr>
-                <td>1 Tiket</td>
-                <td>50.000.000</td>
-                <td>24</td>
-                <td>4.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>320.000.000</td>
-                <td>6</td>
-                <td>8.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>175.000.000</td>
-                <td>12</td>
-                <td>8.000.000</td>
-              </tr>
-              <tr>
-                <td>2 Tiket</td>
-                <td>100.000.000</td>
-                <td>24</td>
-                <td>8.000.000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="d-flex justify-content-center align-item-center">
-          <div class="row mt-4 text-md-middle mobile-center">
-            <div class="col-auto">
-              <a href="#" class="btn-custom-red">Beli Tiket</a>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 my-auto">
+          <div class="box shadow-sm p-4 main-speaker-1">
+            <div class="image-wrapper mb-3">
+              <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="..." />
             </div>
-            <div class="col-auto">
-              <a href="#" class="btn-custom-blue"
-                >Ikuti program untuk tiket gratis</a
-              >
+            <div class="box-desc">
+              <h5>Denny Sumargo</h5>
+              <p>Master Class</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 my-auto">
+          <div class="box shadow-sm p-4 main-speaker-2">
+            <div class="image-wrapper mb-3">
+              <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="..." />
+            </div>
+            <div class="box-desc">
+              <h5>Lo Kheng Hong</h5>
+              <p>Master Class</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 my-auto">
+          <div class="box shadow-sm p-4 main-speaker-3">
+            <div class="image-wrapper mb-3">
+              <img class="img-fluid" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="..." />
+            </div>
+            <div class="box-desc">
+              <h5>Yandi Lawrens</h5>
+              <p>Master Class</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <img
-      src="./img/arch-divider (1).png"
-      style="margin-top: -2%; width: 100%"
-    />
-    <!-- travel fair -->
-    <section id="timeline-section">
-      <div class="container">
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h2>Travel Fair by OCBC Visa Credit Cards</h2>
-          </div>
-          <p class="text-center">
-            Dapatkan beragam penawaran menarik untuk paket tiket pesawat & tour
-            package di berbagai travel partners pilihan dengan bertransaksi
-            menggunakan OCBC VISA Credit Cards
-          </p>
+    </div>
+  </section>
+  <!-- speaker additional -->
+  <section class="section-team">
+    <div class="container">
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h3>Workshop Class</h3>
         </div>
-        <br />
-        <div id="timeline-content">
-          <div class="timeline-heading-mobile">
-            <h2 class="text-center text-white">
-              OCBC STANDS STRONG WITH VAST INNOVATIONS AND ACHIEVEMENTS
-            </h2>
-          </div>
-          <div class="contents">
-            <div class="left_content">
-              <div class="sticky_wrap">
-                <img
-                  src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cuan_cat_title_d950de2bc2.png"
-                  alt="OCBC Anniversary"
-                  class="mt-10"
-                  style="width: 70%; height: 500px"
-                />
-              </div>
+      </div>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
             </div>
-            <div class="right_content">
-              <div class="wrapper-box-gray">
-                <img
-                  src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
-                  alt=""
-                  class="cc-feature-img"
-                  style="width: 150px"
-                />
-                <div>
-                  <h3><b>Cashback Hingga Rp 7,5 juta</b></h3>
-                  <p>
-                    Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
-                    ipsum dolor imet
-                  </p>
-                </div>
-              </div>
-              <br />
-              <div class="wrapper-box-gray">
-                <img
-                  src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
-                  alt=""
-                  class="cc-feature-img"
-                  style="width: 150px"
-                />
-                <div>
-                  <h3><b>Koper Premium + Cashback Hingga Rp 100 Ribu</b></h3>
-                  <p>
-                    Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
-                    ipsum dolor imet
-                  </p>
-                </div>
-              </div>
-              <br />
-              <div class="wrapper-box-gray">
-                <img
-                  src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
-                  alt=""
-                  class="cc-feature-img"
-                  style="width: 150px"
-                />
-                <div>
-                  <h3><b>Lucky Draw Tiket Rp 88 Ribu</b></h3>
-                  <p>
-                    Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
-                    ipsum dolor imet
-                  </p>
-                </div>
-              </div>
-              <br />
-              <div class="wrapper-box-gray">
-                <img
-                  src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
-                  alt=""
-                  class="cc-feature-img"
-                  style="width: 150px"
-                />
-                <div>
-                  <h3><b>Promo Tiket Spesial</b></h3>
-                  <p>
-                    Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
-                    ipsum dolor imet
-                  </p>
-                </div>
-              </div>
-              <br />
-              <div class="wrapper-box-gray">
-                <img
-                  src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
-                  alt=""
-                  class="cc-feature-img"
-                  style="width: 150px"
-                />
-                <div>
-                  <h3><b>Diskon Eksklusif</b> di Disney Pop Up Store</h3>
-                  <p>
-                    Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
-                    ipsum dolor imet
-                  </p>
-                </div>
-              </div>
+            <div class="person-info">
+              <h3 class="full-name">Irwan Tja</h3>
+              <span class="speciality">Workshop Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Workshop Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ligwina Hananto</h3>
+              <span class="speciality">Workshop Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Workshop Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ligwina Hananto</h3>
+              <span class="speciality">Workshop Class</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <img src="./img/frame-4 (6).png" style="margin-top: -2%; width: 100%" />
-    <!-- logo partner -->
-    <section id="logo-partner">
-      <div class="container">
-        <div class="general-heading mb-48 text-center text-white">
-          <div class="heading">
-            <h2>Sponsored By</h2>
-          </div>
-          <p class="text-center">
-            Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor
-            imet ipsum dolor imet
-          </p>
-        </div>
-        <div class="logo-img-container">
-          <img
-            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/logo_sponsor_desktop_7bd2c29367.png"
-            alt="Logo Sponsor Disney Orchestra"
-            class="no-mob"
-          />
-          <img
-            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/logo_sponsor_mobile_b745decdea.png"
-            alt="Logo Sponsor Disney Orchestra"
-            class="no-desktop"
-          />
+      <br />
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h3>Financial Class</h3>
         </div>
       </div>
-    </section>
-    <!-- site footer -->
-    <section class="site-footer-section">
-      <div class="site-footer-grid">
-        <div class="site-footer-content">
-          <a href="" target="_blank"
-            ><img
-              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_1_7edb460202.png"
-              alt="OCBC Mobile"
-              id="footer-1-img"
-          /></a>
-        </div>
-
-        <div class="site-footer-content">
-          <a href="tel:+1500999" target="_blank"
-            ><img
-              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_2_c424d845a6.png"
-              alt="QR OCBC Mobile"
-              id="footer-2-img"
-          /></a>
-        </div>
-        <div class="site-footer-content">
-          <a href="http://wa.me/628121500999" target="_blank"
-            ><img
-              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_3_eb56bbd551.png"
-              alt="QR OCBC Mobile"
-              id="footer-3-img"
-          /></a>
-        </div>
-
-        <div class="site-footer-content">
-          <p>
-            PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa
-            Keuangan & Bank Indonesia, serta merupakan peserta penjaminan LPS.
-          </p>
-        </div>
-
-        <div class="site-footer-content">
-          <p>Temukan kami di</p>
-          <div class="footer-icon-flex">
-            <a href="https://www.instagram.com/ocbc_indonesia/" target="_blank"
-              ><img
-                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_ig_edc13d5369.png"
-                alt="IG OCBC"
-            /></a>
-            <a href="https://www.facebook.com/ocbcbankid" target="_blank"
-              ><img
-                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_fb_4f9bc60671.png"
-                alt="FB OCBC"
-            /></a>
-            <a href="https://www.youtube.com/@ocbc_Indonesia" target="_blank"
-              ><img
-                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_yt_835808e2c1.png"
-                alt="YT OCBC"
-            /></a>
-            <a href="https://www.tiktok.com/@ocbc_indonesia" target="_blank"
-              ><img
-                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_tt_60256914e1.png"
-                alt="TT OCBC"
-            /></a>
-            <a href="https://x.com/ocbc_indonesia" target="_blank"
-              ><img
-                src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_x_ed28b1cdaa.png"
-                alt="X OCBC"
-            /></a>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ust. Dennis Lim</h3>
+              <span class="speciality">Financial Class</span>
+            </div>
           </div>
-          <p><b>www.ocbc.id</b></p>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ligwina Hananto</h3>
+              <span class="speciality">Financial Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ust. Dennis Lim</h3>
+              <span class="speciality">Financial Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ligwina Hananto</h3>
+              <span class="speciality">Financial Class</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Ust. Dennis Lim</h3>
+              <span class="speciality">Financial Class</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- scroll to top -->
-    <button id="back-to-top" onclick="scrollToTop()">
-      <em class="fas fa-arrow-up"></em>
-    </button>
+      <br />
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h3>Travel Talks</h3>
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Travel Talks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Travel Talks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Travel Talks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Travel Talks</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="single-person">
+            <div class="person-image">
+              <img src="https://images.pexels.com/photos/555790/pexels-photo-555790.png" alt="" />
+            </div>
+            <div class="person-info">
+              <h3 class="full-name">Muh Sadam</h3>
+              <span class="speciality">Travel Talks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="./img/frame-1.png" style="margin-top: -2%; width: 100%" />
+  <!-- table section -->
+  <section id="table-section">
+    <div class="general-heading mb-48 text-center text-white">
+      <div class="heading">
+        <h2>Classes Schedule - Free Entry</h2>
+      </div>
+      <p class="text-center">
+        Kunjungi Senayan City main atrium untuk mengikuti kelas finansial,
+        bisnis & parenting berikut ini:
+      </p>
+    </div>
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Jenis Tiket</th>
+              <th>Jumlah Tiket</th>
+              <th>Penempatan Dana</th>
+              <th>Tenor<br />(Bulan)</th>
+              <th>Penalti</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">1</td>
+              <td style="background-color: #422802; color: white" rowspan="2">
+                Bronze<br />
+              </td>
+              <td>1 Tiket</td>
+              <td>11.000.000</td>
+              <td>12</td>
+              <td>500.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>12.000.000</td>
+              <td>24</td>
+              <td>1.000.000</td>
+            </tr>
+            <tr>
+              <td rowspan="4">2</td>
+              <td style="background-color: #584d4d; color: white" rowspan="4">
+                Silver
+              </td>
+              <td>1 Tiket</td>
+              <td>30.000.000</td>
+              <td>12</td>
+              <td>1.200.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>15.000.000</td>
+              <td>24</td>
+              <td>1.200.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>55.000.000</td>
+              <td>12</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>30.000.000</td>
+              <td>24</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td rowspan="6">3</td>
+              <td style="background-color: #a7008c; color: white" rowspan="6">
+                Diamond
+              </td>
+              <td>1 Tiket</td>
+              <td>100.000.000</td>
+              <td>6</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>55.000.000</td>
+              <td>12</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>30.000.000</td>
+              <td>24</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>200.000.000</td>
+              <td>6</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>110.000.000</td>
+              <td>12</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>60.000.000</td>
+              <td>24</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td rowspan="6">4</td>
+              <td style="background-color: #ffc507; color: white" rowspan="6">
+                VVIP
+              </td>
+              <td>1 Tiket</td>
+              <td>160.000.000</td>
+              <td>6</td>
+              <td>4.000.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>90.000.000</td>
+              <td>12</td>
+              <td>4.000.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>50.000.000</td>
+              <td>24</td>
+              <td>4.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>320.000.000</td>
+              <td>6</td>
+              <td>8.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>175.000.000</td>
+              <td>12</td>
+              <td>8.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>100.000.000</td>
+              <td>24</td>
+              <td>8.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h2>Master class & workshop schedule - Ticketing Rp 199 Ribu</h2>
+        </div>
+        <p class="text-center">
+          Pilih 3 dari 12 kelas masterclass & workshop untuk dapatkan beragam
+          insight dari speakers favoritmu
+        </p>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Jenis Tiket</th>
+              <th>Jumlah Tiket</th>
+              <th>Penempatan Dana</th>
+              <th>Tenor<br />(Bulan)</th>
+              <th>Penalti</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">1</td>
+              <td style="background-color: #422802; color: white" rowspan="2">
+                Bronze<br />
+              </td>
+              <td>1 Tiket</td>
+              <td>11.000.000</td>
+              <td>12</td>
+              <td>500.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>12.000.000</td>
+              <td>24</td>
+              <td>1.000.000</td>
+            </tr>
+            <tr>
+              <td rowspan="4">2</td>
+              <td style="background-color: #584d4d; color: white" rowspan="4">
+                Silver
+              </td>
+              <td>1 Tiket</td>
+              <td>30.000.000</td>
+              <td>12</td>
+              <td>1.200.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>15.000.000</td>
+              <td>24</td>
+              <td>1.200.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>55.000.000</td>
+              <td>12</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>30.000.000</td>
+              <td>24</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td rowspan="6">3</td>
+              <td style="background-color: #a7008c; color: white" rowspan="6">
+                Diamond
+              </td>
+              <td>1 Tiket</td>
+              <td>100.000.000</td>
+              <td>6</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>55.000.000</td>
+              <td>12</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>30.000.000</td>
+              <td>24</td>
+              <td>2.500.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>200.000.000</td>
+              <td>6</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>110.000.000</td>
+              <td>12</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>60.000.000</td>
+              <td>24</td>
+              <td>5.000.000</td>
+            </tr>
+            <tr>
+              <td rowspan="6">4</td>
+              <td style="background-color: #ffc507; color: white" rowspan="6">
+                VVIP
+              </td>
+              <td>1 Tiket</td>
+              <td>160.000.000</td>
+              <td>6</td>
+              <td>4.000.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>90.000.000</td>
+              <td>12</td>
+              <td>4.000.000</td>
+            </tr>
+            <tr>
+              <td>1 Tiket</td>
+              <td>50.000.000</td>
+              <td>24</td>
+              <td>4.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>320.000.000</td>
+              <td>6</td>
+              <td>8.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>175.000.000</td>
+              <td>12</td>
+              <td>8.000.000</td>
+            </tr>
+            <tr>
+              <td>2 Tiket</td>
+              <td>100.000.000</td>
+              <td>24</td>
+              <td>8.000.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex justify-content-center align-item-center">
+        <div class="row mt-4 text-md-middle mobile-center">
+          <div class="col-auto">
+            <a href="#" class="btn-custom-red">Beli Tiket</a>
+          </div>
+          <div class="col-auto">
+            <a href="#" class="btn-custom-blue">Ikuti program untuk tiket gratis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="./img/arch-divider.png" style="margin-top: -2%; width: 100%" />
+  <!-- travel fair -->
+  <section id="timeline-section">
+    <div class="container">
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h2>Travel Fair by OCBC Visa Credit Cards</h2>
+        </div>
+        <p class="text-center">
+          Dapatkan beragam penawaran menarik untuk paket tiket pesawat & tour
+          package di berbagai travel partners pilihan dengan bertransaksi
+          menggunakan OCBC VISA Credit Cards
+        </p>
+      </div>
+      <br />
+      <div id="timeline-content">
+        <div class="timeline-heading-mobile">
+          <h2 class="text-center text-white">
+            OCBC STANDS STRONG WITH VAST INNOVATIONS AND ACHIEVEMENTS
+          </h2>
+        </div>
+        <div class="contents">
+          <div class="left_content">
+            <div class="sticky_wrap">
+              <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cuan_cat_title_d950de2bc2.png"
+                alt="OCBC Anniversary" class="mt-10" style="width: 70%; height: 500px" />
+            </div>
+          </div>
+          <div class="right_content">
+            <div class="wrapper-box-gray">
+              <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
+                alt="" class="cc-feature-img" style="width: 150px" />
+              <div>
+                <h3><b>Cashback Hingga Rp 7,5 juta</b></h3>
+                <p>
+                  Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
+                  ipsum dolor imet
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="wrapper-box-gray">
+              <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
+                alt="" class="cc-feature-img" style="width: 150px" />
+              <div>
+                <h3><b>Koper Premium + Cashback Hingga Rp 100 Ribu</b></h3>
+                <p>
+                  Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
+                  ipsum dolor imet
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="wrapper-box-gray">
+              <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
+                alt="" class="cc-feature-img" style="width: 150px" />
+              <div>
+                <h3><b>Lucky Draw Tiket Rp 88 Ribu</b></h3>
+                <p>
+                  Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
+                  ipsum dolor imet
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="wrapper-box-gray">
+              <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
+                alt="" class="cc-feature-img" style="width: 150px" />
+              <div>
+                <h3><b>Promo Tiket Spesial</b></h3>
+                <p>
+                  Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
+                  ipsum dolor imet
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="wrapper-box-gray">
+              <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/cc_feature_4_img_38747db5b1.png"
+                alt="" class="cc-feature-img" style="width: 150px" />
+              <div>
+                <h3><b>Diskon Eksklusif</b> di Disney Pop Up Store</h3>
+                <p>
+                  Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
+                  ipsum dolor imet
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img src="./img/frame-2.png" style="margin-top: -2%; width: 100%" />
+  <!-- logo partner -->
+  <section id="logo-partner">
+    <div class="container">
+      <div class="general-heading mb-48 text-center text-white">
+        <div class="heading">
+          <h2>Sponsored By</h2>
+        </div>
+        <p class="text-center">
+          Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor
+          imet ipsum dolor imet
+        </p>
+      </div>
+      <div class="logo-img-container">
+        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/logo_sponsor_desktop_7bd2c29367.png"
+          alt="Logo Sponsor Disney Orchestra" class="no-mob" />
+        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/logo_sponsor_mobile_b745decdea.png"
+          alt="Logo Sponsor Disney Orchestra" class="no-desktop" />
+      </div>
+    </div>
+  </section>
 
-    <!-- scripts -->
-    <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/scroll_To_Top_28479c85b4.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- site footer -->
+  <section class="site-footer-section">
+    <div class="site-footer-grid">
+      <div class="site-footer-content">
+        <a href="" target="_blank"><img
+            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_1_7edb460202.png" alt="OCBC Mobile"
+            id="footer-1-img" /></a>
+      </div>
 
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        loop: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
+      <div class="site-footer-content">
+        <a href="tel:+1500999" target="_blank"><img
+            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_2_c424d845a6.png"
+            alt="QR OCBC Mobile" id="footer-2-img" /></a>
+      </div>
+      <div class="site-footer-content">
+        <a href="http://wa.me/628121500999" target="_blank"><img
+            src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_3_eb56bbd551.png"
+            alt="QR OCBC Mobile" id="footer-3-img" /></a>
+      </div>
+      <div class="site-footer-content">
+        <p>
+          PT Bank OCBC NISP Tbk berizin dan diawasi oleh Otoritas Jasa
+          Keuangan & Bank Indonesia, serta merupakan peserta penjaminan LPS.
+        </p>
+      </div>
+
+      <div class="site-footer-content">
+        <p>Temukan kami di</p>
+        <div class="footer-icon-flex">
+          <a href="https://www.instagram.com/ocbc_indonesia/" target="_blank"><img
+              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_ig_edc13d5369.png"
+              alt="IG OCBC" /></a>
+          <a href="https://www.facebook.com/ocbcbankid" target="_blank"><img
+              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_fb_4f9bc60671.png"
+              alt="FB OCBC" /></a>
+          <a href="https://www.youtube.com/@ocbc_Indonesia" target="_blank"><img
+              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_yt_835808e2c1.png"
+              alt="YT OCBC" /></a>
+          <a href="https://www.tiktok.com/@ocbc_indonesia" target="_blank"><img
+              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_tt_60256914e1.png"
+              alt="TT OCBC" /></a>
+          <a href="https://x.com/ocbc_indonesia" target="_blank"><img
+              src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/icon_x_ed28b1cdaa.png"
+              alt="X OCBC" /></a>
+        </div>
+        <p><b>www.ocbc.id</b></p>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!-- floating cta -->
+  <section id="floating-cta">
+    <div id="floating-cta-wrapper">
+      <div id="container-floating-img-text">
+        <img src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/kartu_flat_30c6690151.png"
+          alt="Kartu Disney OCBC" id="floating-cta-img" class="responsive-floating-cta" />
+        <div class="floating-wrapper-text">
+          <p id="floating-cta-text">
+            Dapatkan Kartu Debit OCBC Young Nyala Edisi Khusus Disney &amp; Marvel
+          </p>
+        </div>
+      </div>
+      <a href="https://onboarding.ocbc.id/product/tanda-junior?utm_source=Onelink&amp;utm_medium=website&amp;utm_campaign=Campaign_YoungNyala"
+        target="_blank">
+        <button id="floating-cta-btn">
+          Buka Young Nyala
+        </button>
+      </a>
+    </div>
+  </section>
+  <!-- scroll to top -->
+  <button id="back-to-top" onclick="scrollToTop()">
+    <em class="fas fa-arrow-up"></em>
+  </button>
+
+  <!-- scripts -->
+  <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/scroll_To_Top_28479c85b4.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
         },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        768: {
+          slidesPerView: 2,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        992: {
+          slidesPerView: 3,
         },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          992: {
-            slidesPerView: 3,
-          },
-        },
-      });
+      },
+    });
 
-      document.querySelector(".mySwiper").addEventListener("click", () => {
-        swiper.autoplay.stop();
-      });
-    </script>
-    <script>
-      const boxes = document.querySelectorAll(".box");
-      let sequence = [0, 1, 2, 1];
-      let index = 0;
+    document.querySelector(".mySwiper").addEventListener("click", () => {
+      swiper.autoplay.stop();
+    });
+  </script>
 
-      function animateNext() {
-        boxes.forEach((b) => b.classList.remove("up"));
+  <script>
+    const boxes = document.querySelectorAll(".box");
+    let sequence = [0, 1, 2, 1];
+    let index = 0;
 
-        // Raise the current box
-        boxes[sequence[index]].classList.add("up");
+    function animateNext() {
+      boxes.forEach((b) => b.classList.remove("up"));
 
-        index = (index + 1) % sequence.length;
-      }
+      boxes[sequence[index]].classList.add("up");
 
-      animateNext();
+      index = (index + 1) % sequence.length;
+    }
 
-      setInterval(animateNext, 600);
-    </script>
-  </body>
+    animateNext();
+
+    setInterval(animateNext, 600);
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    const races = document.querySelector(".races");
+    console.log(races.offsetWidth)
+
+    function getScrollAmount() {
+      let racesWidth = races.scrollWidth;
+      return -(racesWidth - window.innerWidth);
+    }
+
+    const tween = gsap.to(races, {
+      x: getScrollAmount,
+      duration: 3,
+      ease: "none",
+    });
+    ScrollTrigger.create({
+      trigger: ".racesWrapper",
+      start: "top 5%",
+      end: () => `+=${getScrollAmount() * -1}`,
+      pin: true,
+      animation: tween,
+      scrub: 1,
+      invalidateOnRefresh: true,
+      markers: false
+    })
+  </script>
+</body>
+
 </html>
