@@ -878,8 +878,8 @@
           <h2>Music Performance</h2>
         </div>
         <p class="text-center">
-          <span class="text-highlight-red">Setelah mendapat banyak insight & keseruan lainnya di Nyala Fest, tutup hari
-            dengan sing along bersama musisi favoritmu
+          Setelah mendapat banyak insight & keseruan lainnya di Nyala Fest, tutup hari
+          dengan sing along bersama musisi favoritmu
         </p>
       </div>
       <div class="row">
@@ -1080,30 +1080,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <script>
-    const races = document.querySelector(".races");
+    gsap.registerPlugin(ScrollTrigger);
 
-    function getScrollAmount() {
-      let racesWidth = races.scrollWidth;
-      return -(racesWidth - window.innerWidth);
+    function initHorizontalScroll() {
+      const races = document.querySelector(".races");
+      const cards = document.querySelectorAll(".card-wrapper");
+
+      // Kill old triggers
+      ScrollTrigger.getAll().forEach(t => t.kill());
+
+      // Total scroll = number of extra cards * viewport width
+      let totalScroll = (cards.length - 1) * window.innerWidth;
+
+      gsap.to(races, {
+        x: -totalScroll,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".racesWrapper",
+          start: "top top",
+          end: `+=${totalScroll}`,
+          pin: true,
+          scrub: 1,
+          invalidateOnRefresh: true
+        }
+      });
+
+      ScrollTrigger.refresh();
     }
 
-    const tween = gsap.to(races, {
-      x: getScrollAmount,
-      duration: 3,
-      ease: "none",
-    });
+    initHorizontalScroll();
 
-    ScrollTrigger.create({
-      trigger: ".racesWrapper",
-      start: "top -5%",
-      end: () => `+=${getScrollAmount() * -1}`,
-      pin: true,
-      animation: tween,
-      scrub: 1,
-      invalidateOnRefresh: true,
-      markers: false
+    window.addEventListener("resize", () => {
+      initHorizontalScroll();
     });
-
   </script>
 </body>
 

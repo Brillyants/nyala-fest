@@ -944,7 +944,7 @@ ul.social li a {
 
 .card-wrapper .card {
     display: flex;
-    max-width: 60%;
+    max-width: 80%;
     flex-direction: row;
     border: 0;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
