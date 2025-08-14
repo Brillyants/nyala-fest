@@ -120,16 +120,98 @@
   </section>
   <img src="./img/frame-2.png" style="margin-top: -2%; width: 100%" />
 
-  <!-- testing -->
-  <div class="racesWrapper">
-    <div class="races">
-      <h2>Monaco</h2>
-      <h2>Austria</h2>
-      <h2>Hungary</h2>
-      <h2>Netherlands</h2>
-      <h2>Japan</h2>
+  <section id="horizontal-parallax">
+    <!-- testing -->
+    <div class="racesWrapper">
+      <div class="races">
+        <!-- Card 1 -->
+        <div class="card-wrapper">
+          <div class="card bg-warning-subtle mt-4">
+            <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text-section">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card's content.</p>
+              </div>
+              <div class="cta-section">
+                <div>$129.00</div>
+                <a href="#" class="btn btn-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card-wrapper">
+          <div class="card bg-success-subtle mt-4">
+            <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text-section">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card's content.</p>
+              </div>
+              <div class="cta-section">
+                <div>$129.00</div>
+                <a href="#" class="btn btn-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-wrapper">
+          <div class="card bg-primary-subtle mt-4">
+            <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text-section">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card's content.</p>
+              </div>
+              <div class="cta-section">
+                <div>$129.00</div>
+                <a href="#" class="btn btn-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-wrapper">
+          <div class="card bg-danger-subtle mt-4">
+            <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text-section">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card's content.</p>
+              </div>
+              <div class="cta-section">
+                <div>$129.00</div>
+                <a href="#" class="btn btn-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-wrapper">
+          <div class="card bg-light-subtle mt-4">
+            <img src="https://codingyaar.com/wp-content/uploads/chair-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="text-section">
+                <h5 class="card-title fw-bold">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card's content.</p>
+              </div>
+              <div class="cta-section">
+                <div>$129.00</div>
+                <a href="#" class="btn btn-dark">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- carousel -->
   <section id="carousel-section">
@@ -247,7 +329,9 @@
       </div>
     </div>
   </section>
+
   <img src="./img/arch-divider.png" style="margin-top: -2%; width: 100%" />
+
   <!-- main speaker -->
   <section id="speaker-section">
     <div class="container">
@@ -1061,7 +1145,6 @@
 
   <script>
     const races = document.querySelector(".races");
-    console.log(races.offsetWidth)
 
     function getScrollAmount() {
       let racesWidth = races.scrollWidth;
@@ -1073,16 +1156,18 @@
       duration: 3,
       ease: "none",
     });
+
     ScrollTrigger.create({
       trigger: ".racesWrapper",
-      start: "top 5%",
+      start: "top -5%",
       end: () => `+=${getScrollAmount() * -1}`,
       pin: true,
       animation: tween,
       scrub: 1,
       invalidateOnRefresh: true,
       markers: false
-    })
+    });
+
   </script>
 </body>
 
