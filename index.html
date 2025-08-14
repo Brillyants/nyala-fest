@@ -1002,7 +1002,7 @@
           alt="Kartu Disney OCBC" id="floating-cta-img" class="responsive-floating-cta" />
         <div class="floating-wrapper-text">
           <p id="floating-cta-text">
-            Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet
+            Lorem ipsum dolor imet ipsum dolor imet ipsum dolor imet ipsum dolor imet
           </p>
         </div>
       </div>
@@ -1082,36 +1082,47 @@
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
+    let horizontalTween;
+
     function initHorizontalScroll() {
       const races = document.querySelector(".races");
       const cards = document.querySelectorAll(".card-wrapper");
 
-      // Kill old triggers
       ScrollTrigger.getAll().forEach(t => t.kill());
+      if (horizontalTween) horizontalTween.kill();
 
-      // Total scroll = number of extra cards * viewport width
-      let totalScroll = (cards.length - 1) * window.innerWidth;
+      gsap.set(races, { clearProps: "all" });
 
-      gsap.to(races, {
-        x: -totalScroll,
+      races.style.width = `${cards.length * 100}vw`;
+
+      const totalScroll = (cards.length - 1) * window.innerWidth;
+
+      horizontalTween = gsap.to(races, {
+        x: () => -(cards.length - 1) * window.innerWidth,
         ease: "none",
         scrollTrigger: {
           trigger: ".racesWrapper",
           start: "top top",
-          end: `+=${totalScroll}`,
+          end: () => `+=${(cards.length - 1) * window.innerWidth}`,
           pin: true,
           scrub: 1,
           invalidateOnRefresh: true
         }
       });
 
-      ScrollTrigger.refresh();
+      requestAnimationFrame(() => {
+        ScrollTrigger.refresh();
+      });
     }
 
-    initHorizontalScroll();
+    window.addEventListener("load", initHorizontalScroll);
 
+    let resizeTimeout;
     window.addEventListener("resize", () => {
-      initHorizontalScroll();
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        initHorizontalScroll();
+      }, 150);
     });
   </script>
 </body>
