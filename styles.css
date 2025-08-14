@@ -142,69 +142,6 @@
 
 /* End Curtain Opening */
 
-/* Start Navbar */
-.navbar-light .navbar-nav .nav-link {
-    color: #385b63;
-}
-
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show>.nav-link {
-    color: #e30614;
-}
-
-.social a:hover {
-    transform: translateY(-0.15rem);
-}
-
-.networking {
-    padding: 180px 0;
-}
-
-.social a:hover .twitter {
-    color: #1da1f2;
-}
-
-.social a:hover .dribbble {
-    color: #be205f;
-}
-
-.social a:hover .facebook {
-    color: #1877f2;
-}
-
-.social a:hover .instagram {
-    color: #ca2e86;
-}
-
-.btn-primary {
-    color: #000;
-    background-color: #e30614 !important;
-    border-color: #e30614 !important;
-}
-
-.nav-item a {
-    margin: 0 6px;
-}
-
-.nav-link::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #000000e6;
-    transition: width 0.3s;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-.nav-link.social-icon::after {
-    content: none;
-}
-
-/* End Navbar */
-
 /* Start Hero */
 #hero-section {
     background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/hero_section_bg_2d44782d87.png");
@@ -212,6 +149,10 @@
     background-position: 75% 0;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.networking {
+    padding: 180px 0;
 }
 
 .hero-img-mobile {
