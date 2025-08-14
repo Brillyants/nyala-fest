@@ -330,14 +330,6 @@
     padding: 40px 0;
 }
 
-.card-wrapper {
-    flex: 0 0 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .toy-card {
     width: 350px;
     height: auto;
@@ -942,55 +934,39 @@ ul.social li a {
     background-color: #01B5F7;
 }
 
-.card {
-    max-width: 30em;
+.card-wrapper {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper .card {
+    display: flex;
+    max-width: 60%;
     flex-direction: row;
-    background-color: #696969;
     border: 0;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
     margin: 3em auto;
-}
-
-.card.dark {
-    color: #fff;
-}
-
-.card.card.bg-light-subtle .card-title {
-    color: dimgrey;
+    background-color: #eeeeee !important;
+    color: rgb(88, 88, 88);
 }
 
 .racesWrapper .card img {
-    max-width: 75%;
+    width: 580px !important;
     margin: auto;
-    padding: 0.5em;
-    border-radius: 0.7em;
 }
 
 .racesWrapper .card-body {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
-.text-section {
-    max-width: 60%;
-}
-
-.cta-section {
-    max-width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.cta-section .btn {
+.racesWrapper .btn {
     padding: 0.3em 0.5em;
-    /* color: #696969; */
-}
-
-.card.bg-light-subtle .cta-section .btn {
-    background-color: #898989;
-    border-color: #898989;
+    background-color: #0172C0 !important;
+    border: none;
 }
 
 @media screen and (max-width: 475px) {
