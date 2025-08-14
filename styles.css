@@ -641,6 +641,10 @@ ul.social li a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+.logo-img-container img {
+    width: 100%;
+}
+
 /* End Logo Sponsor */
 
 /* Start Timeline Section  */
@@ -944,7 +948,7 @@ ul.social li a {
 
 .card-wrapper .card {
     display: flex;
-    max-width: 80%;
+    max-width: 70%;
     flex-direction: row;
     border: 0;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
@@ -954,7 +958,7 @@ ul.social li a {
 }
 
 .racesWrapper .card img {
-    width: 580px !important;
+    width: 100%;
     margin: auto;
 }
 
@@ -969,8 +973,8 @@ ul.social li a {
     border: none;
 }
 
-@media screen and (max-width: 475px) {
-    .card {
-        font-size: 0.9em;
+@media screen and (max-width: 800px) {
+    .card-wrapper .card {
+        flex-direction: column;
     }
 }
