@@ -47,16 +47,29 @@ body {
 
 .heading h2 {
   text-align: center;
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 4px 10px rgba(0, 0, 0, 0.15),
-    0px 17px 17px rgba(0, 0, 0, 0.13), 0px 39px 24px rgba(0, 0, 0, 0.08),
+  text-shadow: 0px 0px 0px rgba(221, 221, 221, 0.15), 0px 4px 10px rgba(214, 214, 214, 0.15),
+    0px 17px 17px rgba(228, 228, 228, 0.13), 0px 39px 24px rgba(0, 0, 0, 0.08),
     0px 70px 28px rgba(0, 0, 0, 0.02), 0px 109px 31px rgba(0, 0, 0, 0);
-  color: #fafafa;
+  color: #494949;
   font-family: "Nunito", sans-serif;
   font-size: 45px;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -1.6px;
   animation: floatUpDown 2s ease-in-out infinite;
+}
+
+.heading h3 {
+  text-align: center;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 4px 10px rgba(0, 0, 0, 0.15),
+    0px 17px 17px rgba(0, 0, 0, 0.13), 0px 39px 24px rgba(0, 0, 0, 0.08),
+    0px 70px 28px rgba(0, 0, 0, 0.02), 0px 109px 31px rgba(0, 0, 0, 0);
+  color: #494949;
+  font-family: "Nunito", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -1.6px;
 }
 
 .text-highlight-red {
@@ -77,19 +90,6 @@ body {
   100% {
     transform: translateY(0);
   }
-}
-
-.heading h3 {
-  text-align: center;
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 4px 10px rgba(0, 0, 0, 0.15),
-    0px 17px 17px rgba(0, 0, 0, 0.13), 0px 39px 24px rgba(0, 0, 0, 0.08),
-    0px 70px 28px rgba(0, 0, 0, 0.02), 0px 109px 31px rgba(0, 0, 0, 0);
-  color: #fafafa;
-  font-family: "Nunito", sans-serif;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: -1.6px;
 }
 
 .general-heading {
@@ -377,8 +377,9 @@ body {
 
 /* Start Speaker */
 #speaker-section {
-  background-color: #c1121f;
-  padding: 50px 0;
+  background: url('./img/bg-speaker.png');
+  background-size: contain;
+  padding: 100px 0;
 }
 
 .box {
@@ -464,7 +465,8 @@ ul.social li a {
 
 /* Start Speaker Additional */
 .section-team {
-  background-color: #c1121f;
+  background: url('./img/bg-speaker.png');
+  background-size: cover;
   padding: 0 0 50px 0;
 }
 
@@ -476,7 +478,6 @@ ul.social li a {
   margin-bottom: 25px;
   font-size: 16px;
   font-weight: 500;
-  color: #3e64ff;
 }
 
 .section-team .header-section .title {
@@ -487,7 +488,7 @@ ul.social li a {
 .section-team .single-person {
   margin-bottom: 10px;
   padding: 30px;
-  background-color: #f4f4f4;
+  background-color: #ED1D25;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -530,28 +531,30 @@ ul.social li a {
   font-size: 20px;
   font-weight: 700;
   min-height: 50px;
-  color: rgb(80, 80, 80);
+  color: white;
 }
 
 .section-team .single-person .person-info .speciality {
   text-transform: uppercase;
   font-size: 14px;
-  color: black;
+  color: white;
 }
 
 /* End Speaker Additional */
 
 /* Start Table */
 #table-section {
-  background-color: #01b5f7;
+  background: url('./img/bg-classes-schedule.png');
+  background-size: contain;
   padding: 50px 0;
 }
 
 /* End Table */
 
 /* Start Travel Fair */
-#travel-fair-section {
-  background-color: #c1111f;
+#timeline-section {
+  background: url('./img/bg-travel-fair.png');
+  background-size: contain;
   padding: 50px 0;
 }
 
@@ -583,12 +586,13 @@ ul.social li a {
 /* End Travel Fair */
 
 /* Start Child Activity */
-#children {
-  background-color: #01b5f7;
+#children-activity {
+  background: url('./img/bg-children.png');
+  background-size: contain;
   padding: 50px 0;
 }
 
-#children img {
+#children-activity img {
   width: 100%;
 }
 
@@ -601,7 +605,9 @@ ul.social li a {
 
 /* Start Music Performance */
 #music-performance {
-  background-color: #c1111f;
+  background: url('./img/bg-music-performance.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 50px 0;
 }
 
@@ -609,7 +615,9 @@ ul.social li a {
 
 /* Start Logo Sponsor */
 #logo-partner {
-  background-color: #01b5f7;
+  background: url('./img/bg-music-performance.png');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 50px 0;
 }
 
@@ -622,6 +630,7 @@ ul.social li a {
   width: fit-content;
   margin: auto;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
 }
 
 .logo-img-container img {
