@@ -94,6 +94,8 @@ body {
 
 .general-heading {
   margin-bottom: 30px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .no-desktop {
