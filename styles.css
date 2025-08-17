@@ -76,6 +76,21 @@ body {
   font-size: 28px;
   font-weight: 600;
   animation: floatUpDown 2s ease-in-out infinite;
+  color: #E30614;
+}
+
+@media screen and (max-width: 768px) {
+  .heading h2 {
+    font-size: 30px;
+  }
+
+  .heading h3 {
+    font-size: 20px;
+  }
+
+  .text-highlight-red {
+    font-size: 18px;
+  }
 }
 
 @keyframes floatUpDown {
