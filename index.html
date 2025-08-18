@@ -54,6 +54,149 @@
 
   <section id="event">
     <div class="container">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="card bg-warning-subtle mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-horizontal-card">
+                    <img src="./img/event-1.png" class="card-img-top" alt="..." />
+                  </div>
+                </div>
+                <div class="col-md-6 second-col-card-body">
+                  <div class="card-body">
+                    <div class="text-section">
+                      <h5 class="card-title bold-card-title">Classes</h5>
+                      <p class="card-text text-red fw-bold">
+                        Free entry & ticketing
+                      </p>
+                      <p class="card-text">
+                        Dapatkan insight keuangan, bisnis hingga parenting bersama
+                        pakarnya.
+                      </p>
+                      <a href="#" class="btn-card-red">Buy ticket</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="card bg-warning-subtle mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-horizontal-card">
+                    <img src="./img/event-2.png" class="card-img-top" alt="..." />
+                  </div>
+                </div>
+                <div class="col-md-6 second-col-card-body">
+                  <div class="card-body">
+                    <div class="text-section">
+                      <h5 class="card-title bold-card-title">Workshop</h5>
+                      <p class="card-text text-red fw-bold">
+                        Limited ticket seats
+                      </p>
+                      <p class="card-text">
+                        Ikuti kelas workshop & masterclass bersama ahli.
+                      </p>
+                      <a href="#" class="btn-card-red">Buy ticket</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card bg-warning-subtle mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-horizontal-card">
+                    <img src="./img/event-2.png" class="card-img-top" alt="..." />
+                  </div>
+                </div>
+                <div class="col-md-6 second-col-card-body">
+                  <div class="card-body">
+                    <div class="text-section">
+                      <h5 class="card-title bold-card-title">Workshop</h5>
+                      <p class="card-text text-red fw-bold">
+                        Limited ticket seats
+                      </p>
+                      <p class="card-text">
+                        Ikuti kelas workshop & masterclass bersama ahli.
+                      </p>
+                      <a href="#" class="btn-card-red">Buy ticket</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card bg-warning-subtle mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-horizontal-card">
+                    <img src="./img/event-2.png" class="card-img-top" alt="..." />
+                  </div>
+                </div>
+                <div class="col-md-6 second-col-card-body">
+                  <div class="card-body">
+                    <div class="text-section">
+                      <h5 class="card-title bold-card-title">Workshop</h5>
+                      <p class="card-text text-red fw-bold">
+                        Limited ticket seats
+                      </p>
+                      <p class="card-text">
+                        Ikuti kelas workshop & masterclass bersama ahli.
+                      </p>
+                      <a href="#" class="btn-card-red">Buy ticket</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card bg-warning-subtle mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-horizontal-card">
+                    <img src="./img/event-2.png" class="card-img-top" alt="..." />
+                  </div>
+                </div>
+                <div class="col-md-6 second-col-card-body">
+                  <div class="card-body">
+                    <div class="text-section">
+                      <h5 class="card-title bold-card-title">Workshop</h5>
+                      <p class="card-text text-red fw-bold">
+                        Limited ticket seats
+                      </p>
+                      <p class="card-text">
+                        Ikuti kelas workshop & masterclass bersama ahli.
+                      </p>
+                      <a href="#" class="btn-card-red">Buy ticket</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more slides as needed -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
   </section>
 
@@ -893,13 +1036,24 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 20,
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
       loop: true,
+      loopedSlides: 10,
       autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+      coverflowEffect: {
+        rotate: 40,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
       },
       pagination: {
         el: ".swiper-pagination",
@@ -916,15 +1070,9 @@
         768: {
           slidesPerView: 2,
         },
-        992: {
-          slidesPerView: 3,
-        },
       },
     });
 
-    document.querySelector(".mySwiper").addEventListener("click", () => {
-      swiper.autoplay.stop();
-    });
   </script>
 
   <script>
