@@ -470,7 +470,7 @@ ul.social li a {
 /* Start Speaker Additional */
 .section-team {
     background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_speaker_3f3979d7f0.png");
-    background-size: cover;
+    background-size: contain;
     padding: 0 0 50px 0;
 }
 
@@ -709,6 +709,11 @@ ul.social li a {
     font-size: 60px;
     font-weight: 700;
     font-family: Arial, sans-serif;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
 
 .max-width-desc-bazaar h4 {
@@ -746,9 +751,10 @@ ul.social li a {
     width: fit-content;
     margin: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+    border-radius: 10px;
     border: 10px solid red;
-    outline: 7px solid yellow;
+    position: relative;
+    box-shadow: 0 0 0 7px yellow, 7px 7px 0 7px yellow;
 }
 
 .logo-img-container img {
