@@ -482,7 +482,7 @@ ul.social li a {
 
 .section-team .header-section .title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 45 px;
 }
 
 .section-team .single-person {
@@ -490,9 +490,8 @@ ul.social li a {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    background-image: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Nyalafest_background_speaker_4973d09ecb.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(137, 137, 137);
+    border: 3px solid rgb(109, 109, 109);
     cursor: pointer;
 }
 
@@ -545,12 +544,28 @@ ul.social li a {
     font-size: 24px;
 }
 
+.min-height-smaller {
+    min-height: 120px;
+}
+
 .min-height-small {
-    min-height: 100px;
+    min-height: 140px;
 }
 
 .min-height-big {
-    min-height: 125px;
+    min-height: 170px;
+}
+
+.speaker-text-content {
+    min-height: 80px;
+}
+
+.speaker-text-content-medium {
+    min-height: 100px;
+}
+
+.speaker-text-content-big {
+    min-height: 130px;
 }
 
 .section-team .single-person .person-info .full-name {
@@ -563,6 +578,17 @@ ul.social li a {
 .section-team .single-person .person-info .speciality {
     font-size: 16px;
     color: white;
+}
+
+.section-team .single-person .person-info .speaker-cta {
+    padding: 3px 10px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    box-shadow: 0px 3px 6px rgba(187, 187, 187, 0.3);
 }
 
 #speakerModal .modal-content {
@@ -584,7 +610,9 @@ ul.social li a {
 /* Start Table */
 #table-section {
     background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_classes_schedule_71582dbdd9.png");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     padding: 50px 0;
 }
 
