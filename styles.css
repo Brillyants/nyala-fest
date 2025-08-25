@@ -62,7 +62,7 @@ body {
         0px 4px 10px rgba(214, 214, 214, 0.15),
         0px 17px 17px rgba(228, 228, 228, 0.13), 0px 39px 24px rgba(0, 0, 0, 0.08),
         0px 70px 28px rgba(0, 0, 0, 0.02), 0px 109px 31px rgba(0, 0, 0, 0);
-    color: #494949;
+    color: #e30614;
     font-family: "Nunito", sans-serif;
     font-size: 45px;
     font-weight: 700;
@@ -337,7 +337,7 @@ body {
 }
 
 .toy-card .button-link {
-    color: orange;
+    color: red;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -378,23 +378,18 @@ body {
 #speaker-section {
     background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_speaker_3f3979d7f0.png");
     background-size: cover;
+    background-position: center center;
     padding: 100px 0 30px 0;
-}
-
-#speaker-section .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .box {
     color: white;
+    border-radius: 70px;
     position: relative;
     overflow: hidden;
     text-align: center;
     margin-bottom: 20px;
-    max-width: 320px;
-    margin: auto;
+    cursor: pointer;
 }
 
 .box {
@@ -406,9 +401,18 @@ body {
 }
 
 .main-speaker-1 {
-    background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/Website_Nyalafest_BG_kuning_2_Music_8ed562d770.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #ED1B24;
+    border: 3px solid rgb(192, 192, 192);
+}
+
+.main-speaker-2 {
+    background-color: #ED1B24;
+    border: 3px solid rgb(192, 192, 192);
+}
+
+.main-speaker-3 {
+    background-color: #ED1B24;
+    border: 3px solid rgb(192, 192, 192);
 }
 
 .box:hover:before {
@@ -421,8 +425,8 @@ body {
 
 .image-wrapper {
     position: relative;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 210px;
+    max-height: 210px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
@@ -580,7 +584,7 @@ ul.social li a {
     color: white;
 }
 
-.section-team .single-person .person-info .speaker-cta {
+.speaker-cta {
     padding: 3px 10px;
     color: black;
     background-color: white;
@@ -700,11 +704,12 @@ ul.social li a {
     justify-content: center;
     background-color: white;
     padding: 20px;
-    border-radius: 20px;
     width: fit-content;
     margin: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    background-color: #ebebeb;
+    border-radius: 5px;
+    border: 10px solid red;
+    outline: 10px solid yellow;
 }
 
 .logo-img-container img {
