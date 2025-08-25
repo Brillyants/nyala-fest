@@ -691,6 +691,45 @@ ul.social li a {
 
 /* End Music Performance */
 
+/* Start Mini Bazaar */
+#mini-bazaar {
+    background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_music_performance_d45d06e8cc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.max-width-desc-bazaar {
+    max-width: 850px;
+    margin: auto !important;
+}
+
+.max-width-desc-bazaar h2 {
+    color: #d93600;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+.max-width-desc-bazaar h4 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+.logo-partner-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    width: fit-content;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* End Mini Bazaar */
+
 /* Start Logo Sponsor */
 #logo-partner {
     background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_music_performance_d45d06e8cc.png");
