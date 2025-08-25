@@ -709,7 +709,7 @@ ul.social li a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     border: 10px solid red;
-    outline: 10px solid yellow;
+    outline: 7px solid yellow;
 }
 
 .logo-img-container img {
@@ -917,7 +917,7 @@ ul.social li a {
 }
 
 #floating-cta-img {
-    max-width: 400px;
+    max-width: 65px;
     margin-right: 20px;
 }
 
@@ -961,7 +961,7 @@ ul.social li a {
 /* Start Back to Top */
 #back-to-top {
     position: fixed;
-    bottom: 50px;
+    bottom: 90px;
     right: 20px;
     background-color: #d32f2f;
     color: white;
@@ -991,6 +991,10 @@ ul.social li a {
     #back-to-top {
         width: 40px;
         height: 40px;
+    }
+
+    #back-to-top {
+        bottom: 110px;
     }
 }
 
