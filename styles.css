@@ -205,10 +205,17 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-custom-red:hover,
-.btn-custom-blue:hover {
+a.btn-custom-red:hover,
+a.btn-custom-blue:hover,
+button.btn-custom-red:hover,
+button.btn-custom-blue:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom-red,
+.btn-custom-blue {
+    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
