@@ -192,6 +192,7 @@ body {
     border-radius: 12px;
     padding: 12px 24px;
     text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-custom-blue {
@@ -201,6 +202,13 @@ body {
     border-radius: 12px;
     padding: 12px 24px;
     text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom-red:hover,
+.btn-custom-blue:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -304,11 +312,19 @@ body {
 }
 
 .toy-card .card-body {
+    background-color: #0172bf;
+    color: white;
     padding: 16px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 0;
+}
+
+.toy-card .card-body h5 {
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .toy-card .card-body p {
@@ -329,11 +345,12 @@ body {
 }
 
 .toy-card .bottom-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    font-weight: 500;
+    margin-top: 10px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid white;
+    width: fit-content;
 }
 
 .toy-card .button-link {
@@ -392,6 +409,12 @@ body {
     cursor: pointer;
 }
 
+.box .speaker-cta {
+    background-color: #0172c0;
+    border: 2px solid white;
+    padding: 7px 10px;
+}
+
 .box {
     transition: transform 0.8s ease-in-out;
 }
@@ -401,17 +424,17 @@ body {
 }
 
 .main-speaker-1 {
-    background-color: #ED1B24;
+    background-color: #cecece;
     border: 3px solid rgb(192, 192, 192);
 }
 
 .main-speaker-2 {
-    background-color: #ED1B24;
+    background-color: #cecece;
     border: 3px solid rgb(192, 192, 192);
 }
 
 .main-speaker-3 {
-    background-color: #ED1B24;
+    background-color: #cecece;
     border: 3px solid rgb(192, 192, 192);
 }
 
@@ -442,6 +465,11 @@ body {
 
 .box-desc {
     position: relative;
+}
+
+.box-desc h5 {
+    color: black;
+    font-weight: 600;
 }
 
 ul.social {
@@ -494,8 +522,8 @@ ul.social li a {
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    background-color: rgb(137, 137, 137);
-    border: 3px solid rgb(109, 109, 109);
+    background-color: #ed1c25;
+    border: 3px solid #ffff00;
     cursor: pointer;
 }
 
@@ -586,8 +614,8 @@ ul.social li a {
 
 .speaker-cta {
     padding: 3px 10px;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #0172c0;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
@@ -667,7 +695,7 @@ ul.social li a {
 /* Start Child Activity */
 #children-activity {
     background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_children_2987536b5d.png");
-    background-size: contain;
+    background-size: cover;
     padding: 50px 0;
 }
 
@@ -675,8 +703,21 @@ ul.social li a {
     width: 100%;
 }
 
-.children-text {
-    margin-top: 20px;
+.children-text-wrapper {
+    background-color: #0172bf;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 130px;
+}
+
+.children-text-wrapper h5 {
+    font-size: 20px !important;
 }
 
 /* End Child Activity */
@@ -709,10 +750,7 @@ ul.social li a {
     font-size: 60px;
     font-weight: 700;
     font-family: Arial, sans-serif;
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
         1px 1px 0 black;
 }
 
@@ -730,7 +768,6 @@ ul.social li a {
     padding: 20px;
     width: fit-content;
     margin: auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* End Mini Bazaar */
