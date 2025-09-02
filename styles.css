@@ -84,6 +84,14 @@ body {
     letter-spacing: -1.6px;
 }
 
+.small-heading-text {
+    font-size: 35px;
+}
+
+.big-sub-heading-text {
+    font-size: 20px;
+}
+
 .text-highlight-red {
     font-size: 28px;
     font-weight: 600;
@@ -205,17 +213,10 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-a.btn-custom-red:hover,
-a.btn-custom-blue:hover,
-button.btn-custom-red:hover,
-button.btn-custom-blue:hover {
+.btn-custom-red:hover,
+.btn-custom-blue:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.btn-custom-red,
-.btn-custom-blue {
-    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -584,27 +585,11 @@ ul.social li a {
 }
 
 .min-height-smaller {
-    min-height: 120px;
+    min-height: 150px;
 }
 
 .min-height-small {
-    min-height: 140px;
-}
-
-.min-height-big {
-    min-height: 170px;
-}
-
-.speaker-text-content {
-    min-height: 80px;
-}
-
-.speaker-text-content-medium {
-    min-height: 100px;
-}
-
-.speaker-text-content-big {
-    min-height: 130px;
+    min-height: 120px;
 }
 
 .section-team .single-person .person-info .full-name {
@@ -668,6 +653,10 @@ ul.social li a {
     max-width: 1100px;
 }
 
+#timeline-section .heading h2 {
+    color: rgb(73, 73, 73);
+}
+
 .wrapper-box-red {
     background-color: #dc2626;
     padding: 20px;
@@ -681,6 +670,18 @@ ul.social li a {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.wrapper-text {
+    margin-left: 10px;
+}
+
+.wrapper-box-gray h5 {
+    font-size: 28px;
+}
+
+.wrapper-box-gray p {
+    font-size: 20px;
 }
 
 .wrapper-box-gray p {
@@ -720,11 +721,15 @@ ul.social li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 130px;
+    min-height: 140px;
 }
 
 .children-text-wrapper h5 {
-    font-size: 20px !important;
+    font-size: 22px !important;
+}
+
+.children-text-wrapper h4 {
+    font-size: 18px !important;
 }
 
 /* End Child Activity */
@@ -748,7 +753,7 @@ ul.social li a {
 }
 
 .max-width-desc-bazaar {
-    max-width: 850px;
+    max-width: 1050px;
     margin: auto !important;
 }
 
@@ -790,15 +795,12 @@ ul.social li a {
 .logo-img-container {
     display: flex;
     justify-content: center;
-    background-color: white;
     padding: 20px;
     width: fit-content;
     margin: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    border: 10px solid red;
     position: relative;
-    box-shadow: 0 0 0 7px yellow, 7px 7px 0 7px yellow;
 }
 
 .logo-img-container img {
@@ -824,23 +826,20 @@ ul.social li a {
 
 .left_content {
     width: 40%;
-    background-color: #fbdbdc;
+    background-image: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/travel_fair_img_efd260f72f.png");
+    background-size: cover;
+    background-position: center center;
     color: #fff;
 }
 
 #img-travel-fair {
     width: 100%;
+    height: 1500px;
+    object-fit: cover;
 }
 
 .cc-feature-img {
-    width: 70px;
-}
-
-.sticky_wrap {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
+    width: 120px;
 }
 
 .sticky_wrap h2 {
