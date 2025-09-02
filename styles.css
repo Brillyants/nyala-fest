@@ -320,7 +320,7 @@ body {
 }
 
 .toy-card .card-body {
-    background-color: #0172bf;
+    background: linear-gradient(to right, #0172bf, #3ca3f7);
     color: white;
     padding: 16px;
     flex: 1;
@@ -712,7 +712,7 @@ ul.social li a {
 }
 
 .children-text-wrapper {
-    background-color: #0172bf;
+    background: linear-gradient(to right, #0172bf, #3ca3f7);
     color: white;
     padding: 10px;
     margin: 20px 0;
@@ -725,7 +725,7 @@ ul.social li a {
 }
 
 .children-text-wrapper h5 {
-    font-size: 22px !important;
+    font-size: 20px !important;
 }
 
 .children-text-wrapper h4 {
@@ -783,6 +783,44 @@ ul.social li a {
 }
 
 /* End Mini Bazaar */
+
+/* Start Cuan */
+#cuan-section {
+    background: url("https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/bg_children_2987536b5d.png");
+    background-size: contain;
+    background-position: center center;
+    padding: 50px 0;
+}
+
+#cuan-section .heading h2 {
+    color: rgb(73, 73, 73);
+}
+
+#cuan-section .row {
+    box-shadow: 0 10px 20px rgba(121, 121, 121, 0.3);
+    border-radius: 10px;
+}
+
+#cuan-section .col {
+    background-color: rgb(252, 252, 252);
+    padding: 20px;
+    border: 5px solid #FD9F9F;
+    border-top: none;
+    border-left: none;
+}
+
+.number-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0172bf;
+    color: white;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-bottom-right-radius: 5px;
+}
+
+/* End Cuan */
 
 /* Start Logo Sponsor */
 #logo-partner {
