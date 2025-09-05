@@ -794,6 +794,15 @@ ul.social li a {
 
 #cuan-section .heading h2 {
     color: rgb(73, 73, 73);
+    font-size: 35px;
+}
+
+#cuan-section .heading h3 {
+    font-size: 28px;
+}
+
+#cuan-section p {
+    font-size: 18px;
 }
 
 #cuan-section .row {
@@ -802,9 +811,9 @@ ul.social li a {
 }
 
 #cuan-section .col {
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(253, 253, 253);
     padding: 20px;
-    border: 5px solid #FD9F9F;
+    border: 5px solid #fd9f9f;
     border-top: none;
     border-left: none;
 }
@@ -839,10 +848,18 @@ ul.social li a {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     position: relative;
+    max-width: 900px;
+    background-color: white;
 }
 
 .logo-img-container img {
     width: 100%;
+}
+
+@media screen and (max-width: 468px) {
+    #logo-partner {
+        background: none;
+    }
 }
 
 /* End Logo Sponsor */
@@ -1033,6 +1050,7 @@ ul.social li a {
 }
 
 #floating-cta-text {
+    text-align: start;
     margin: 0 !important;
 }
 
@@ -1079,6 +1097,11 @@ ul.social li a {
 @media screen and (max-width: 735px) {
     #floating-cta-text {
         text-align: start;
+        font-size: 12px;
+    }
+
+    .small-floating-cta-text {
+        font-size: 10px;
     }
 }
 
