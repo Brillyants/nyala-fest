@@ -964,8 +964,8 @@ ul.social li a {
 }
 
 .popup-content {
-    color: white;
-    background: #3750A3;
+    color: rgb(36, 36, 36);
+    background: #FFF3CD;
     padding: 40px;
     width: 80%;
     max-width: 600px;
@@ -976,8 +976,10 @@ ul.social li a {
     border: 5px solid rgb(223, 223, 223);
 }
 
-.popup-content p {
+.popup-content p,
+.popup-content ul {
     margin: 0;
+    font-size: 18px;
 }
 
 .popup-close {
