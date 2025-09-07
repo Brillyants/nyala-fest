@@ -1263,7 +1263,7 @@ hemat budget traveling."
 
   <!-- site footer -->
   <section class="site-footer-section">
-    <div class="site-footer-grid wow animate__animated animate__fadeInUp">
+    <div class="site-footer-grid wow animate__animated animate__fadeIn">
       <div class="site-footer-content">
         <a href="" target="_blank"><img
             src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/footer_1_7edb460202.png" alt="OCBC Mobile"
@@ -1365,149 +1365,12 @@ hemat budget traveling."
     </div>
   </div>
 
-
-  <script src="/asset/media/Base-Themes/Core-Libraries/scripts/optimized-min.js?t=20240108T042142Z"></script>
-  <script src="/asset/media/Base-Themes/XA-API/Scripts/optimized-min.js?t=20230517T031930Z"></script>
-  <script
-    src="https://cdn2.ocbc.id/asset/media/Base-Themes/Core-Libraries/scripts/optimized-min.js?t=20240108T042142Z"></script>
-  <script
-    src="https://cdn3.ocbc.id/asset/media/Base-Themes/XA-API/Scripts/optimized-min.js?t=20230517T031930Z"></script>
   <script src="https://on-c2-cmshub-public.s3.ap-southeast-3.amazonaws.com/scroll_To_Top_8bf18e5ccb.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      loopedSlides: 10,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
-      },
-      coverflowEffect: {
-        rotate: 40,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-      },
-    });
-
-  </script>
-  <script>
-    document.querySelectorAll('.single-person').forEach(card => {
-      card.addEventListener('click', function () {
-        const name = this.getAttribute('data-name');
-        const speciality = this.getAttribute('data-speciality') || '';
-        const bio = this.getAttribute('data-bio') || 'Tidak ada informasi tambahan yang tersedia.';
-        const img = this.getAttribute('data-img');
-
-        document.getElementById('speakerName').textContent = name;
-        document.getElementById('speakerSpeciality').textContent = speciality;
-        document.getElementById('speakerBio').innerHTML = bio;
-        document.getElementById('speakerImage').src = img;
-
-        const modal = new bootstrap.Modal(document.getElementById('speakerModal'));
-        modal.show();
-      });
-    });
-  </script>
-  <script>
-    document.querySelectorAll('.box').forEach(card => {
-      card.addEventListener('click', function () {
-        const name = this.getAttribute('data-name');
-        const speciality = this.getAttribute('data-speciality') || '';
-        const bio = this.getAttribute('data-bio') || 'No additional info available.';
-        const img = this.getAttribute('data-img');
-
-        document.getElementById('speakerName').textContent = name;
-        document.getElementById('speakerSpeciality').textContent = speciality;
-        document.getElementById('speakerBio').innerHTML = bio;
-        document.getElementById('speakerImage').src = img;
-
-        const modal = new bootstrap.Modal(document.getElementById('speakerModal'));
-        modal.show();
-      });
-    });
-  </script>
-  <script>
-    const termsData = {
-      "icon_travel_fair_4_8fb53bf315.png": `
-    <h2><b>Cashback hingga Rp9 juta</b></h2>
-    <ul>
-      <li>Berlaku untuk pembelian tiket & tour package.</li>
-      <li>Cashback diberikan dalam bentuk e-voucher.</li>
-      <li>Minimal transaksi Rp15 juta.</li>
-      <li>Promo berlaku hingga 30 September 2025.</li>
-      <li>Berlaku untuk pembelian tiket & tour package.</li>
-      <li>Cashback diberikan dalam bentuk e-voucher.</li>
-      <li>Minimal transaksi Rp15 juta.</li>
-      <li>Promo berlaku hingga 30 September 2025.</li>
-      <li>Berlaku untuk pembelian tiket & tour package.</li>
-      <li>Cashback diberikan dalam bentuk e-voucher.</li>
-      <li>Minimal transaksi Rp15 juta.</li>
-      <li>Promo berlaku hingga 30 September 2025.</li>
-    </ul>
-  `,
-      "icon_travel_fair_3_26b7b5d769.png": `
-    <h2><b>Panorama JTB</b></h2>
-    <ul>
-      <li>Diskon Rp5,5 juta untuk tour internasional.</li>
-      <li>Berlaku untuk destinasi tertentu.</li>
-      <li>Tidak dapat digabungkan dengan promo lain.</li>
-    </ul>
-  `,
-      "logo_garuda_indonesia_c831b2206e.png": `
-    <h2><b>Garuda Indonesia</b></h2>
-    <ul>
-      <li>Voucher diskon 20% GarudaMiles Redemption.</li>
-      <li>Hanya berlaku di booth Garuda Indonesia.</li>
-      <li>Syarat & ketentuan Garuda berlaku.</li>
-    </ul>
-  `,
-    };
-
-    const modal = document.getElementById("popupModal");
-    const modalBody = document.getElementById("popup-body");
-    const closeBtn = document.querySelector(".popup-close");
-
-    document.querySelectorAll(".cc-feature-img").forEach(img => {
-      img.addEventListener("click", () => {
-        const src = img.getAttribute("src").split("/").pop();
-        modalBody.innerHTML = termsData[src] || "<p>Terms not available.</p>";
-        modal.style.display = "flex";
-      });
-    });
-
-    closeBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    window.addEventListener("click", e => {
-      if (e.target === modal) modal.style.display = "none";
-    });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./scripts/sliderEvent.js"></script>
+  <script src="./scripts/speakerPopUp.js"></script>
+  <script src="./scripts/travelFairPopUp.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
     new WOW().init();
